@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/nav_rezervace"
+            android:title="Rezervace" />
+        <item android:id="@+id/nav_sluzby"
+            android:title="Služby" />
+        <item android:id="@+id/nav_pokoje"
+            android:title="Pokoje" />
+        <item android:id="@+id/nav_about"
+            android:title="O nás" />
+        <item android:id="@+id/nav_kontakt"
+            android:title="Kontakt" />
+    </group>
+
+
+
+</menu>

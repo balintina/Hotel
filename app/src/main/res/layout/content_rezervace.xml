@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!-->-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    android:fillViewport="true"
+
+    >
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:layout_marginTop="56dp"
+    >
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/activity_rezervace" tools:context="czu.pef.kit.kozl.hotel_v1.rezervace">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Rezervace Pobytu"
+        android:id="@+id/textViewRezervaceNadpis"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Jméno a příjmení"
+        android:ems="10"
+        android:id="@+id/editTextJmeno"
+        android:layout_below="@+id/textViewRezervaceNadpis"
+        android:layout_alignRight="@+id/textViewRezervaceNadpis"
+        android:layout_alignEnd="@+id/textViewRezervaceNadpis" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/editTextMail"
+        android:layout_below="@+id/editTextJmeno"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="E-mail" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editTextTelefon"
+        android:layout_below="@+id/editTextMail"
+        android:layout_alignRight="@+id/editTextJmeno"
+        android:layout_alignEnd="@+id/editTextJmeno"
+        android:hint="Telefon" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:ems="10"
+        android:id="@+id/editTextAdresa"
+        android:layout_below="@+id/editTextTelefon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:hint="Adresa trvalého bydliště" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kuřák"
+        android:id="@+id/checkBoxKurak"
+        android:checked="false"
+        android:layout_alignTop="@+id/radioGroup"
+        android:layout_alignLeft="@+id/checkBoxSnidane"
+        android:layout_alignStart="@+id/checkBoxSnidane" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:hint="Datum počátku pobytu"
+        android:layout_below="@+id/radioGroup"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_alignParentStart="true"
+        android:hint="Datum konce pobytu"
+        android:layout_below="@+id/editText"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Snídaně"
+        android:id="@+id/checkBoxSnidane"
+        android:checked="false"
+        android:layout_below="@+id/checkBoxKurak"
+        android:layout_alignRight="@+id/buttonOdeslat"
+        android:layout_alignEnd="@+id/buttonOdeslat" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Odeslat"
+        android:id="@+id/buttonOdeslat"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentLeft="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zrušit"
+        android:id="@+id/buttonZrusit"
+        android:layout_below="@+id/editText2"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:onClick=""/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/radioGroup"
+        android:layout_below="@+id/editTextAdresa"
+        android:layout_toRightOf="@+id/checkBoxSnidane"
+        android:layout_toEndOf="@+id/checkBoxSnidane">
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jendolůžkový"
+            android:id="@+id/radioButtonJ"
+            android:checked="false"
+            android:layout_below="@+id/editTextAdresa"
+            android:layout_alignLeft="@+id/radioButtonD"
+            android:layout_alignStart="@+id/radioButtonD" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dvoulůžkový"
+            android:id="@+id/radioButtonD"
+            android:checked="false"
+            android:layout_below="@+id/radioButtonJ"
+            android:layout_alignLeft="@+id/radioButtonT"
+            android:layout_alignStart="@+id/radioButtonT" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Třílůžkový"
+            android:id="@+id/radioButtonT"
+            android:checked="false"
+            android:layout_below="@+id/radioButtonD"
+            android:layout_toLeftOf="@+id/buttonZrusit" />
+    </RadioGroup>
+
+</RelativeLayout>
+</ScrollView>
+</LinearLayout>
+<!--</FrameLayout>-->

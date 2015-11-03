@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Hotel_v1</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_rezervace">rezervace</string>
+    <string name="title_activity_sluzby">sluzby</string>
+    <string name="title_activity_pokoje">pokoje</string>
+    <string name="title_activity_about">about</string>
+    <string name="title_activity_kontakt">kontakt</string>
+    <string name="title_activity_luxusni">luxusni</string>
+    <string name="title_activity_obycejne">obycejne</string>
+    <string name="title_activity_odeslano">odeslano</string>
+    <string name="textViewRezervaceNadpis">Rezervace Pobytu</string>
+</resources>

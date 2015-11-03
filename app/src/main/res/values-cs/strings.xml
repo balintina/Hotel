@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hotel_v1</string>
+    <string name="action_settings">Nastavení</string>
+    <string name="navigation_drawer_close">Zavřít navigační lištu</string>
+    <string name="navigation_drawer_open">Otevřít navigační lištu</string>
+    <string name="title_activity_about">O hotelu</string>
+    <string name="title_activity_kontakt">Kontakty</string>
+    <string name="title_activity_luxusni">Luxusní</string>
+    <string name="title_activity_obycejne">obyčenjné</string>
+    <string name="title_activity_odeslano">Odesláno</string>
+    <string name="title_activity_pokoje">Pokoje</string>
+    <string name="title_activity_rezervace">Rezervace</string>
+    <string name="title_activity_sluzby">Služby</string>
+    <string name="textViewRezervaceNadpis">Rezervace Pobytu</string>
+</resources>
